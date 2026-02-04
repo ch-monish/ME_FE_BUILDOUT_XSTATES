@@ -17,7 +17,7 @@ function App() {
     useEffect(() => {
       const fetchCountries = async () => {
         try {
-          const res = await axios.get("https://crio-location-selector.onrender.com/countries")
+          const res = await axios.get("https://location-selector.labs.crio.do/countries")
           console.log(res.data)
           setCountrylist(res.data)
         } catch (error) {

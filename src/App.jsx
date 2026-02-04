@@ -40,7 +40,7 @@ function App() {
           setStatelist(res.data)
         } catch (error) {
           console.error("Error fetching data:", error)
-          setStatelist(["Failed to load states"])
+          setStatelist([])
         }
       }
       fetchStates()
@@ -55,7 +55,7 @@ function App() {
           setCitylist(res.data)
         } catch (error) {
           console.error("Error fetching data:", error)
-          setCitylist(["Failed to load cities"])
+          setCitylist([])
         }
       }
       fetchCities()
